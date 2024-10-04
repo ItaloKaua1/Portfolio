@@ -1,7 +1,6 @@
 <template>
     <div>
-        <h1>Contato</h1>
-        <p>Entre em contato conosco!</p>
+        <a href="https://github.com/ItaloKaua1" target="_blank"><h1 id="nome">Ítalo Kauã</h1></a>
     </div>
 </template>
 
@@ -24,5 +23,17 @@
         width: 100vw;
         left: 0;
         top: 0;
+    }
+    #nome {
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        margin: 0;
+        top: 3.5%;
+    }
+    a{
+        text-decoration: none;
+        cursor: pointer;
+        color: white;
     }
 </style>

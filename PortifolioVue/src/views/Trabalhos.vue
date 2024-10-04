@@ -1,7 +1,12 @@
 <template>
     <div>
-        <h1>Trabalhos</h1>
+        <a href="https://github.com/ItaloKaua1" target="_blank"><h1 id="nome">Ítalo Kauã</h1></a>
         <Navbar />
+        <section>
+            <div id="div1">
+
+            </div>
+        </section>
     </div>
 </template>
 
@@ -25,5 +30,17 @@ import Navbar from '@/components/Navbar.vue';
         width: 100vw;
         left: 0;
         top: 0;
+    }
+    #nome {
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        margin: 0;
+        top: 3.5%;
+    }
+    a{
+        text-decoration: none;
+        cursor: pointer;
+        color: white;
     }
 </style>

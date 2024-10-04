@@ -65,10 +65,9 @@ export default {
     cursor: pointer;
     text-decoration: none;
     border: none;
-    /* Remove qualquer borda aplicada */
 }
 
 .navbar-items li.active a {
-    border-bottom: 2px solid white;
+    border-bottom: 2px solid rgb(146, 17, 127);
 }
 </style>
