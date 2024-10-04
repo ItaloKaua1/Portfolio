@@ -6,7 +6,8 @@
 
 <template>
     <div>
-        <h1>Home</h1>
+        <img src="/ik.gif" alt="italo kaua">
+        <h1>Bem-vindo ao meu Portifólio!</h1>
     </div>
 </template>
 
@@ -17,11 +18,16 @@
         height: 100vh;
         margin: 0;
         padding: 0;
-        display: block;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
         position: absolute;
         width: 100vw;
         left: 0;
         top: 0;
     }
+    img{
+        width: 15%;
+    }
 </style>
-
