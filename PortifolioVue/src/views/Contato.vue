@@ -18,7 +18,10 @@
         height: 100vh;
         margin: 0;
         padding: 0;
-        display: block;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
         position: absolute;
         width: 100vw;
         left: 0;
