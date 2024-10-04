@@ -40,6 +40,7 @@
         margin-top: 2%;
         transition: transform 0.3s ease, box-shadow 0.3s ease;
         overflow: hidden;
+        font-weight: bold;
     }
     .button-projeto:hover{
         transform: scale(1.05); 

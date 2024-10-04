@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div id="container-trabalho">
         <a href="https://github.com/ItaloKaua1" target="_blank"><h1 id="nome">Ítalo Kauã</h1></a>
         <Navbar />
         <section>
@@ -67,20 +67,18 @@
 </template>
 
 <script>
-    import Navbar from '@/components/Navbar.vue';
     import ButtonsProjetos from '@/components/ButtonsProjetos.vue';
 
     export default {
     name: 'Trabalhos',
     components: {
-        Navbar,
-        ButtonsProjetos
+        ButtonsProjetos,
     }
     };
 </script>
 
 <style scoped>
-    div {
+    #container-trabalho {
         background-color: black;
         height: 100vh;
         margin: 0;
@@ -93,6 +91,8 @@
         width: 100vw;
         left: 0;
         top: 0;
+        font-family: 'Courier New', Courier, monospace;
+        
     }
     #nome {
         position: absolute;
@@ -100,6 +100,7 @@
         left: 20px;
         margin: 0;
         top: 3.5%;
+        text-decoration: underline
     }
     a{
         text-decoration: none;
@@ -129,6 +130,7 @@
         height: 100%;
         transition: transform 0.3s ease, box-shadow 0.3s ease;
         overflow: hidden;
+        border-radius: 10px;
     }
 
     .container-trabalho:hover {

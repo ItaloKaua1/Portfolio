@@ -19,7 +19,6 @@ export default {
                 { name: 'Home', route: '/' },
                 { name: 'Sobre', route: '/sobre' },
                 { name: 'Trabalhos', route: '/trabalhos' },
-                { name: 'Contato', route: '/contato' },
             ],
         });
 
@@ -33,41 +32,41 @@ export default {
 </script>
 
 <style scoped>
-.navbar {
-    position: fixed;
-    display: flex;
-    top: 5%;
-    right: 0;
-    width: 25%;
-    height: 50px;
-    justify-content: flex-end;
-    padding-right: 20px;
-    z-index: 1000;
-    margin: 0;
-}
+    .navbar {
+        position: fixed;
+        display: flex;
+        top: 5%;
+        right: 0;
+        width: 25%;
+        height: 50px;
+        justify-content: flex-end;
+        padding-right: 20px;
+        z-index: 1000;
+        margin: 0;
+    }
 
-.navbar-items {
-    position: fixed;
-    display: flex;
-    align-items: center;
-    margin: 0;
-    padding: 0;
-}
+    .navbar-items {
+        position: fixed;
+        display: flex;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+    }
 
-.navbar-items li {
-    margin-right: 20px;
-    list-style-type: none;
-}
+    .navbar-items li {
+        margin-right: 20px;
+        list-style-type: none;
+    }
 
-.navbar-items li a {
-    color: white;
-    padding: 10px;
-    cursor: pointer;
-    text-decoration: none;
-    border: none;
-}
+    .navbar-items li a {
+        color: white;
+        padding: 10px;
+        cursor: pointer;
+        text-decoration: none;
+        border: none;
+    }
 
-.navbar-items li.active a {
-    border-bottom: 2px solid rgb(146, 17, 127);
-}
+    .navbar-items li.active a {
+        border-bottom: 2px solid rgb(146, 17, 127);
+    }
 </style>

@@ -1,5 +1,5 @@
 <template>
-    <div id="container">
+    <div id="container-sobre">
         <a href="https://github.com/ItaloKaua1" target="_blank">
             <h1 id="nome">Ítalo Kauã</h1>
         </a>
@@ -20,21 +20,22 @@
                 </li>
             </div>
             <div class="section" id="skills">
-                <h2>Skills:</h2>
-                <p>Skill 1</p>
-                <p>Skill 2</p>
+                <h2>Soft Skills:</h2>
+                <p>Comunicação</p>
+                <p>Trabalho em equipe</p>
+                <p>Inglês intermediário</p>
             </div>
             <div class="section" id="especializada">
                 <h2>Área Especializada:</h2>
-                <p>Área X</p>
-                <p>Área Y</p>
+                <p>Desenvolvimento Front-End utiliazando Vue.js</p>
+                <p>Desenvolvimento Front-End utilizando React</p>
+                <p>Teste unitários utilizando JEST</p>
             </div>
         </div>
     </div>
 </template>
 
 <script>
-import Navbar from '@/components/Navbar.vue';
 
 export default {
     name: 'Sobre',
@@ -54,7 +55,7 @@ export default {
 </script>
 
 <style scoped>
-    #container {
+    #container-sobre {
         background-color: black;
         width: 100vw;
         height: 100vh;
@@ -64,6 +65,7 @@ export default {
         align-items: center;
         color: white;
         position: relative;
+        font-family: 'Courier New', Courier, monospace;
     }
 
     #nome {
@@ -71,6 +73,7 @@ export default {
         top: 20px;
         left: 20px;
         margin: 0;
+        text-decoration: underline
     }
 
     a {
