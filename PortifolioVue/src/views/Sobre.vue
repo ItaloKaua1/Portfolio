@@ -7,13 +7,15 @@
         <div id="grid">
             <div class="section" id="formacao">
                 <h2>Formação:</h2>
-                <p>Sou formado em técnico em edificações pela escola profissionalizante EEEP Professor Antônio Valmir da Silva</p>
-                <p>Estou indo pro sexto semestre de Engenharia de Software pela Universidade Federal do Ceará</p>
+                <p>Sou formado como Técnico em Edificações pela Escola Estadual de Educação Profissional <b>Professor
+                    Antônio Valmir da Silva</b>. Atualmente, estou cursando o sexto semestre de <b>Engenharia de Software</b> 
+                    na <b>Universidade Federal do Ceará</b>.
+                </p>
             </div>
             <div class="section" id="certificados">
                 <h2>Certificados:</h2>
                 <li>
-                    <span @click="toggleCertificado(1)" class="seta">⬇️</span>Certificado AWS Academy
+                    <b>Certificado AWS Academy </b><span @click="toggleCertificado(1)" class="seta">⬇️</span>
                     <div v-if="ceritificadoVisibility[1]">
                         <img src="/aws-ik.jpg" alt="certificado aws" class="certificado-img">
                     </div>
@@ -21,15 +23,15 @@
             </div>
             <div class="section" id="skills">
                 <h2>Soft Skills:</h2>
-                <p>Comunicação</p>
-                <p>Trabalho em equipe</p>
-                <p>Inglês intermediário</p>
+                <p><b>Comunicação</b></p>
+                <p><b>Trabalho em equipe</b></p>
+                <p><b>Inglês intermediário</b></p>
             </div>
             <div class="section" id="especializada">
                 <h2>Área Especializada:</h2>
-                <p>Desenvolvimento Front-End utiliazando Vue.js</p>
-                <p>Desenvolvimento Front-End utilizando React</p>
-                <p>Teste unitários utilizando JEST</p>
+                <p><b>Desenvolvimento Front-End utiliazando Vue.js</b></p>
+                <p><b>Desenvolvimento Front-End utilizando React</b></p>
+                <p><b>Teste unitários utilizando JEST</b></p>
             </div>
         </div>
     </div>
@@ -63,7 +65,7 @@ export default {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        color: white;
+        color: #F13257;
         position: relative;
         font-family: 'Courier New', Courier, monospace;
     }
@@ -79,21 +81,21 @@ export default {
     a {
         text-decoration: none;
         cursor: pointer;
-        color: white;
+        color: #F13257;
     }
 
     #grid {
         display: grid;
-        grid-template-columns: repeat(2, 1fr); /* 2 colunas */
-        grid-template-rows: repeat(2, 1fr); /* 2 linhas */
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
         gap: 20px;
         width: 80%;
         height: 70%;
     }
 
     .section {
-        background-color: #F1F1F1;
-        color: black;
+        background-color: #171616;
+        color: #F13257;
         padding: 20px;
         border-radius: 15px;
         display: flex;

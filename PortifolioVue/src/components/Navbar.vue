@@ -64,9 +64,16 @@ export default {
         cursor: pointer;
         text-decoration: none;
         border: none;
+        transition: color 0.3s ease;
     }
 
+    .navbar-items li a:hover {
+        color: #F13257;
+    }
+
+
     .navbar-items li.active a {
-        border-bottom: 2px solid rgb(146, 17, 127);
+        color: #F13257;
+        border-bottom: 2px solid #F13257;
     }
 </style>

@@ -16,7 +16,7 @@
             <div id="div2" class="container-trabalho">
                 <h1>Fine'sUp</h1>
                 <img src="/Ts-logo.png"  alt="Typescript logo" id="logo">
-                <p>Esse é um projeto de controle de finanças</p>
+                <p>Esse é um projeto de controle de finanças.</p>
                 <ButtonsProjetos 
                     link="https://github.com/JoseEdSouza/finesup"
                     cor="#3178C6"
@@ -26,7 +26,7 @@
             <div id="div3" class="container-trabalho">
                 <h1>Web</h1>
                 <img src="/JS-logo.png" alt="java script logo" id="logo">
-                <p>Esse é o repositório da minha disciplina de web</p>
+                <p>Esse é o repositório da minha disciplina de web.</p>
                 <ButtonsProjetos 
                     link="https://github.com/ItaloKaua1/WEB2024"
                     cor="#F7DF1E"
@@ -36,7 +36,7 @@
             <div id="div4" class="container-trabalho">
                 <h1>Films</h1>
                 <img src="/JS-logo.png" alt="java script logo" id="logo">
-                <p>Esse é um projeto que usei pra aprender o básico de react e js</p>
+                <p>Esse é um projeto que usei pra aprender o básico de react e js.</p>
                 <ButtonsProjetos 
                     link="https://github.com/ItaloKaua1/Films-"
                     cor="#F7DF1E"
@@ -46,7 +46,7 @@
             <div id="div5" class="container-trabalho">
                 <h1>Prova 02</h1>
                 <img src="/JS-logo.png" alt="java script logo" id="logo">
-                <p>Esse é o repositório da minha prova 02 da cadeira de web</p>
+                <p id="txt">Esse é o repositório da minha prova 02 da cadeira de web.</p>
                 <ButtonsProjetos 
                     link="https://github.com/ItaloKaua1/Prova02"
                     cor="#F7DF1E"
@@ -105,7 +105,7 @@
     a{
         text-decoration: none;
         cursor: pointer;
-        color: white;
+        color: #F13257;
     }
     section {
         display: grid;
@@ -123,14 +123,15 @@
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        background-color: #F1F1F1;
-        color: black;
+        background-color: #171616;
+        color: #F13257;
         position: relative; 
         width: 100%;
         height: 100%;
         transition: transform 0.3s ease, box-shadow 0.3s ease;
         overflow: hidden;
         border-radius: 10px;
+        text-align: center; 
     }
 
     .container-trabalho:hover {

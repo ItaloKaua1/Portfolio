@@ -30,7 +30,7 @@
 
 <style>
     .button-projeto{
-        color: black;
+        color: whit;
         padding: 10px 20px;
         border: none;
         cursor: pointer;
@@ -44,7 +44,7 @@
     }
     .button-projeto:hover{
         transform: scale(1.05); 
-        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        box-shadow: 0 8px 16px rgba(207, 207, 207, 0.2);
     }
     .button-projeto{
         opacity: 0.8;

@@ -46,11 +46,12 @@
     }
     a{
         cursor: pointer;
-        color: white;
+        color: #F13257;
     }
 
     #titulo-home{
         margin-bottom: 5%;
+        color: #F13257;
     }
 
     .contatos-container{
