@@ -16,7 +16,10 @@
   }
 
   body {  
-    background-color: black; /* Fundo preto */
-    color: white; /* Texto branco por padrão */
+    background-color: black;
+    color: white;
+  }
+  #app{
+    max-width: 100%;
   }
 </style>

@@ -1,7 +1,5 @@
 <template>
     <div id="container-trabalho">
-        <a href="https://github.com/ItaloKaua1" target="_blank"><h1 id="nome">Ítalo Kauã</h1></a>
-        <Navbar />
         <section>
             <div id="div1" class="container-trabalho">
                 <h1 id="titulo">Delivey Site</h1>
@@ -80,19 +78,20 @@
 <style scoped>
     #container-trabalho {
         background-color: black;
-        height: 100vh;
+        color: white;
+        height: 100%;
         margin: 0;
         padding: 0;
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        position: absolute;
-        width: 100vw;
+        position: relative;
+        width: 100%;
         left: 0;
         top: 0;
         font-family: 'Courier New', Courier, monospace;
-        
+        flex: 1;
     }
     #nome {
         position: absolute;

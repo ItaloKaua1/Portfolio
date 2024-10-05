@@ -1,9 +1,5 @@
 <template>
     <div id="container-sobre">
-        <a href="https://github.com/ItaloKaua1" target="_blank">
-            <h1 id="nome">Ítalo Kauã</h1>
-        </a>
-        <Navbar />
         <div id="grid">
             <div class="section" id="formacao">
                 <h2>Formação:</h2>
@@ -59,15 +55,24 @@ export default {
 <style scoped>
     #container-sobre {
         background-color: black;
-        width: 100vw;
-        height: 100vh;
+        color: white;
+        height: 100%;
+        margin: 0;
+        padding: 0;
         display: flex;
-        flex-direction: column;
         justify-content: center;
         align-items: center;
-        color: #F13257;
+        flex-direction: column;
         position: relative;
+        width: 100%;
+        left: 0;
+        top: 0;
         font-family: 'Courier New', Courier, monospace;
+        flex: 1;
+    }
+
+    #certificados, #formacao{
+        margin-top: -5%;
     }
 
     #nome {
