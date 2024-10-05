@@ -44,7 +44,7 @@
     }
     .button-projeto:hover{
         transform: scale(1.05); 
-        box-shadow: 0 8px 16px rgba(207, 207, 207, 0.2);
+        box-shadow: 0 8px 16px #f13257;
     }
     .button-projeto{
         opacity: 0.8;

@@ -127,7 +127,7 @@
 
     .container-trabalho:hover {
         transform: scale(1.05); 
-        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        box-shadow: 0 8px 16px #f13257;
     }
 
     #logo {
