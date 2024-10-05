@@ -10,12 +10,20 @@
             </div>
             <div class="section" id="certificados">
                 <h2>Certificados:</h2>
-                <li>
-                    <b>Certificado AWS Academy </b><span @click="toggleCertificado(1)" class="seta">⬇️</span>
-                    <div v-if="ceritificadoVisibility[1]">
-                        <img src="/aws-ik.jpg" alt="certificado aws" class="certificado-img">
-                    </div>
-                </li>
+                <ul>
+                    <li>
+                        <b>Certificado AWS Academy </b><span @click="toggleCertificado(1)" class="seta">⬇️</span>
+                        <div v-if="ceritificadoVisibility[1]">
+                            <img src="/aws-ik.jpg" alt="certificado aws" class="certificado-img">
+                        </div>
+                    </li>
+                    <li>
+                        <b>Certificado Inglês - Fisk </b><span @click="toggleCertificado(2)" class="seta">⬇️</span>
+                        <div v-if="ceritificadoVisibility[2]">
+                            <img src="/fisk-certificado.jpeg" alt="certificado ingles" class="certificado-img">
+                        </div>
+                    </li>
+                </ul>
             </div>
             <div class="section" id="skills">
                 <h2>Soft Skills:</h2>
@@ -41,6 +49,7 @@ export default {
         return {
             ceritificadoVisibility: {
                 1: false,
+                2: false,
             }
         };
     },

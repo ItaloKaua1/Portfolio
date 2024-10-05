@@ -10,7 +10,7 @@
                     @click="selectPage('trabalhos')">Trabalhos</router-link>
             </div>
 
-            <div class="navbar-toggle" @click="toggleMenu">
+            <div class="navbar-toggle" @click="toggleMenu" :class="{ 'active': isMenuOpen }">
                 <svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24"
                     xmlns="http://www.w3.org/2000/svg">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7">
@@ -20,34 +20,37 @@
         </div>
 
         <div class="dropdown-menu" v-if="isMenuOpen">
-            <a href="https://www.linkedin.com/in/italokaua1/" target="_blank"><img src="/LinkedIn-logo.png" alt="linkedin logo" id="logo-contato"></a>
-            <a href="https://github.com/ItaloKaua1" target="_blank"><img src="/gh-logo-dark.png" alt="linkedin logo" id="logo-contato"></a>
-            <a href="mailto:contato.italo.kaua.11@gmail.com" target="_blank"><img src="/Gmail-logo.png" alt="linkedin logo" id="logo-contato"></a>
+            <a href="https://www.linkedin.com/in/italokaua1/" target="_blank"><img src="/LinkedIn-logo.png"
+                    alt="linkedin logo" id="logo-contato"></a>
+            <a href="https://github.com/ItaloKaua1" target="_blank"><img src="/gh-logo-dark.png" alt="github logo"
+                    id="logo-contato"></a>
+            <a href="mailto:contato.italo.kaua.11@gmail.com" target="_blank"><img src="/Gmail-logo.png" alt="gmail logo"
+                    id="logo-contato"></a>
         </div>
     </nav>
 </template>
 
 <script>
-    export default {
-        data() {
-            return {
+export default {
+    data() {
+        return {
             isMenuOpen: false,
             activePage: 'home',
-            };
-        },
-        methods: {
-            toggleMenu() {
+        };
+    },
+    methods: {
+        toggleMenu() {
             this.isMenuOpen = !this.isMenuOpen;
-            },
-            selectPage(page) {
+        },
+        selectPage(page) {
             this.activePage = page;
             this.isMenuOpen = false;
-            },
-            isActive(page) {
-            return this.activePage === page;
-            },
         },
-    };
+        isActive(page) {
+            return this.activePage === page;
+        },
+    },
+};
 </script>
 
 <style scoped>
@@ -66,7 +69,7 @@
         justify-content: space-between;
         align-items: center;
         width: 100%;
-        box-sizing: border-box; 
+        box-sizing: border-box;
     }
 
     .navbar-links {
@@ -96,6 +99,15 @@
         width: 24px;
         height: 24px;
         color: white;
+        transition: color 0.3s ease;
+    }
+
+    .navbar-toggle:hover .icon {
+        color: #f13257;
+    }
+
+    .navbar-toggle.active .icon {
+        color: #f13257;
     }
 
     .dropdown-menu {
@@ -120,6 +132,10 @@
         align-self: flex-end;
     }
 
+    #logo-contato:hover{
+        transform: scale(1.05);
+        box-shadow: 0 5px 10px #f13257; 
+    }
 
     .dropdown-link {
         color: white;
@@ -134,22 +150,22 @@
 
     @media (max-width: 768px) {
         .navbar-links {
-        display: none;
-        flex-direction: column;
-        position: absolute;
-        top: 64px;
-        left: 0;
-        width: 100%;
-        background-color: black;
-        padding: 16px;
+            display: none;
+            flex-direction: column;
+            position: absolute;
+            top: 64px;
+            left: 0;
+            width: 100%;
+            background-color: black;
+            padding: 16px;
         }
 
         .navbar-links.active {
-        display: flex;
+            display: flex;
         }
 
         .navbar-toggle {
-        display: block;
+            display: block;
         }
     }
-</style>  
+</style>

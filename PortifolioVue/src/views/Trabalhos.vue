@@ -93,14 +93,6 @@
         font-family: 'Courier New', Courier, monospace;
         flex: 1;
     }
-    #nome {
-        position: absolute;
-        top: 20px;
-        left: 20px;
-        margin: 0;
-        top: 3.5%;
-        text-decoration: underline
-    }
     a{
         text-decoration: none;
         cursor: pointer;
