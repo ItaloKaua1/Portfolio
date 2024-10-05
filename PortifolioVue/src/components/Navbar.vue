@@ -2,12 +2,11 @@
     <nav class="navbar">
         <div class="navbar-container">
             <div class="navbar-links">
-                <router-link to="/" class="navbar-link" :class="{ 'active': isActive('home') }"
-                    @click="selectPage('home')">Home</router-link>
-                <router-link to="/sobre" class="navbar-link" :class="{ 'active': isActive('sobre') }"
-                    @click="selectPage('sobre')">Sobre</router-link>
-                <router-link to="/trabalhos" class="navbar-link" :class="{ 'active': isActive('trabalhos') }"
-                    @click="selectPage('trabalhos')">Trabalhos</router-link>
+                <router-link to="/" class="navbar-link" :class="{ 'active': isActive('/') }">Home</router-link>
+                <router-link to="/sobre" class="navbar-link"
+                    :class="{ 'active': isActive('/sobre') }">Sobre</router-link>
+                <router-link to="/trabalhos" class="navbar-link"
+                    :class="{ 'active': isActive('/trabalhos') }">Trabalhos</router-link>
             </div>
 
             <div class="navbar-toggle" @click="toggleMenu" :class="{ 'active': isMenuOpen }">
@@ -20,12 +19,15 @@
         </div>
 
         <div class="dropdown-menu" v-if="isMenuOpen">
-            <a href="https://www.linkedin.com/in/italokaua1/" target="_blank"><img src="/LinkedIn-logo.png"
-                    alt="linkedin logo" id="logo-contato"></a>
-            <a href="https://github.com/ItaloKaua1" target="_blank"><img src="/gh-logo-dark.png" alt="github logo"
-                    id="logo-contato"></a>
-            <a href="mailto:contato.italo.kaua.11@gmail.com" target="_blank"><img src="/Gmail-logo.png" alt="gmail logo"
-                    id="logo-contato"></a>
+            <a href="https://www.linkedin.com/in/italokaua1/" target="_blank">
+                <img src="/LinkedIn-logo.png" alt="linkedin logo" id="logo-contato" />
+            </a>
+            <a href="https://github.com/ItaloKaua1" target="_blank">
+                <img src="/gh-logo-dark.png" alt="github logo" id="logo-contato" />
+            </a>
+            <a href="mailto:contato.italo.kaua.11@gmail.com" target="_blank">
+                <img src="/Gmail-logo.png" alt="gmail logo" id="logo-contato" />
+            </a>
         </div>
     </nav>
 </template>
@@ -35,19 +37,14 @@ export default {
     data() {
         return {
             isMenuOpen: false,
-            activePage: 'home',
         };
     },
     methods: {
         toggleMenu() {
             this.isMenuOpen = !this.isMenuOpen;
         },
-        selectPage(page) {
-            this.activePage = page;
-            this.isMenuOpen = false;
-        },
         isActive(page) {
-            return this.activePage === page;
+            return this.$route.path === page;
         },
     },
 };
@@ -132,9 +129,9 @@ export default {
         align-self: flex-end;
     }
 
-    #logo-contato:hover{
+    #logo-contato:hover {
         transform: scale(1.05);
-        box-shadow: 0 5px 10px #f13257; 
+        box-shadow: 0 5px 10px #f13257;
     }
 
     .dropdown-link {
