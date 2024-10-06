@@ -7,7 +7,7 @@
 <template>
     <div id="container-home">
         <img src="/ik.gif" alt="italo kaua">
-        <h1 id="titulo-home">Bem-vindo ao meu Portifólio!</h1>
+        <h1 id="titulo-home">Bem-vindo ao meu Portfólio!</h1>
     </div>
 </template>
 
