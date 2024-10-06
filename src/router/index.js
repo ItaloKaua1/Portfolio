@@ -10,7 +10,7 @@ const routes = [
 ];
 
 const router = createRouter({
-    history: createWebHistory('/Portifolio/'),
+    history: createWebHistory('/Portfolio/'),
     routes,
 });
 
