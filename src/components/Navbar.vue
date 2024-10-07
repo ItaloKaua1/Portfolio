@@ -63,108 +63,129 @@ export default {
         font-size: x-large;
     }
 
-        .navbar-container {
+    .navbar-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .navbar-links {
+        display: flex;
+        gap: 20px;
+    }
+
+    .navbar-link {
+        color: white;
+        text-decoration: none;
+        transition: color 0.3s ease;
+    }
+
+    .navbar-link:hover {
+        color: #f13257;
+    }
+
+    .active {
+        color: #f13257;
+    }
+
+    .navbar-toggle {
+        cursor: pointer;
+    }
+
+    .icon {
+        width: 24px;
+        height: 24px;
+        color: white;
+        transition: color 0.3s ease;
+    }
+
+    .navbar-toggle:hover .icon {
+        color: #f13257;
+    }
+
+    .navbar-toggle.active .icon {
+        color: #f13257;
+    }
+
+    .dropdown-menu {
+        position: absolute;
+        top: 61px;
+        right: 16px;
+        background-color: #171616;
+        padding-inline: 10px;
+        padding-top: 10px;
+        border-radius: 4px;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        z-index: 1000;
+        max-width: calc(100% - 32px);
+    }
+
+    #logo-contato {
+        width: 45px;
+        margin-bottom: 10px;
+        align-self: flex-end;
+    }
+
+    #logo-contato:hover {
+        transform: scale(1.05);
+        box-shadow: 0 5px 10px #f13257;
+    }
+
+    .dropdown-link {
+        color: white;
+        padding: 8px 0;
+        text-decoration: none;
+        transition: color 0.3s ease;
+    }
+
+    .dropdown-link:hover {
+        color: #f13257;
+    }
+
+    @media (max-width: 768px) {
+        .navbar{
+            width: 100%;
             display: flex;
+            position: relative;
+        }
+
+        .navbar-container{
+            display: flex;
+            position: relative;
+            box-sizing: border-box;
+            width: 100%;
             justify-content: space-between;
             align-items: center;
-            width: 100%;
-            box-sizing: border-box;
         }
 
         .navbar-links {
             display: flex;
-            gap: 20px;
+            flex-direction: row;
+            position: relative;
+            left: 0;
+            width: 75%;
+            padding: 16px;
+            z-index: 1002;
         }
 
-        .navbar-link {
-            color: white;
-            text-decoration: none;
-            transition: color 0.3s ease;
-        }
-
-        .navbar-link:hover {
-            color: #f13257;
-        }
-
-        .active {
-            color: #f13257;
+        .navbar-links.active {
+            display: flex;
         }
 
         .navbar-toggle {
-            cursor: pointer;
+            display: block;
         }
 
-        .icon {
-            width: 24px;
-            height: 24px;
-            color: white;
-            transition: color 0.3s ease;
-        }
-
-        .navbar-toggle:hover .icon {
-            color: #f13257;
-        }
-
-        .navbar-toggle.active .icon {
-            color: #f13257;
-        }
-
-        .dropdown-menu {
+        .navbar-toggle {
+            display: block;
             position: absolute;
-            top: 61px;
             right: 16px;
-            background-color: #171616;
-            padding-inline: 10px;
-            padding-top: 10px;
-            border-radius: 4px;
-            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-            display: flex;
-            flex-direction: column;
-            align-items: flex-end;
-            z-index: 1000;
-            max-width: calc(100% - 32px);
+            top: 16px;
         }
-
-        #logo-contato {
-            width: 45px;
-            margin-bottom: 10px;
-            align-self: flex-end;
-        }
-
-        #logo-contato:hover {
-            transform: scale(1.05);
-            box-shadow: 0 5px 10px #f13257;
-        }
-
-        .dropdown-link {
-            color: white;
-            padding: 8px 0;
-            text-decoration: none;
-            transition: color 0.3s ease;
-        }
-
-        .dropdown-link:hover {
-            color: #f13257;
-        }
-
-        @media (max-width: 768px) {
-            .navbar-links {
-                display: none;
-                flex-direction: column;
-                position: absolute;
-                top: 64px;
-                left: 0;
-                width: 100%;
-                background-color: black;
-                padding: 16px;
-            }
-
-            .navbar-links.active {
-                display: flex;
-            }
-
-            .navbar-toggle {
-                display: block;
-            }
-        }
+    }
 </style>
