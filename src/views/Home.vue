@@ -32,21 +32,28 @@
     img{
         width: 15%;
     }
-    #nome {
-        position: absolute;
-        top: 20px;
-        left: 20px;
-        margin: 0;
-        top: 3.5%;
-        text-decoration: underline;
-    }
-    a{
-        cursor: pointer;
+    #titulo-home{
         color: #F13257;
     }
 
-    #titulo-home{
-        margin-bottom: 5%;
-        color: #F13257;
+    @media (max-width: 768px){
+        #container-home{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            height: 100%;
+        }
+        img{
+            width: 45%;
+        }
+        #titulo-home{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            padding: 20px;
+            text-align: center;
+        }
     }
 </style>
