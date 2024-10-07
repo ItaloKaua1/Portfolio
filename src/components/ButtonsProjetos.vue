@@ -30,7 +30,7 @@
 
 <style>
     .button-projeto{
-        color: whit;
+        color: black;
         padding: 10px 20px;
         border: none;
         cursor: pointer;
@@ -48,5 +48,11 @@
     }
     .button-projeto{
         opacity: 0.8;
+    }
+
+    @media (max-width: 768px){
+        .button-projeto{
+            margin-bottom: 10px;
+        }
     }
 </style>

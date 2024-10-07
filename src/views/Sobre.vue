@@ -142,4 +142,49 @@ export default {
     h2 {
         margin-bottom: 10px;
     }
+
+    @media (max-width: 768px){
+        #container-sobre {
+            display: flex;
+            position: relative;
+            text-align: center;
+        }
+
+        #grid {
+            grid-template-columns: 1fr;
+            grid-template-rows: auto;
+            gap: 10px;
+            width: 90%;
+            height: auto;
+        }
+
+        .section {
+            width: 90%;
+            margin: 0 auto 10px auto;
+            padding: 20px;
+        }
+
+        #formacao {
+            margin-top: 200px;
+            margin-bottom: 20px;
+        }
+
+        .seta {
+            cursor: pointer;
+            margin-right: 10px;
+        }
+
+        .certificado-img {
+            margin-top: 10px;
+            width: 100%;
+            max-width: 300px;
+            max-height: 400px;
+            border-radius: 10px;
+        }
+
+        .section div {
+            transition: max-height 0.3s ease-in-out;
+            overflow: hidden;
+        }
+    }
 </style>

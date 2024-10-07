@@ -137,5 +137,22 @@
         width: 40px;
         height: auto;
     }
+    
+    @media (max-width: 768px){
+        #container-trabalho{
+            display: flex;
+            position: relative;
+            text-align: center;
+        }
 
+        section{
+            grid-template-columns: 1fr;
+            grid-template-rows: auto;
+            gap: 10px;
+            width: 90%;
+            height: auto;
+            margin-top: 290px;
+            margin-bottom: 10px;
+        }
+    }
 </style>
