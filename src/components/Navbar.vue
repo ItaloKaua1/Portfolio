@@ -248,4 +248,24 @@ export default {
         }
     }
 
+    @media (min-width: 300px) and (max-width: 319px){
+        .navbar-container{
+            display: flex;
+            justify-content: baseline;
+            padding: 0 10px
+        }
+        .navbar-links{
+            display: flex;
+            position: relative;
+            left: 0;
+            margin-left: -40px;
+        }
+        .navbar-toggle{
+            display: flex;
+            position: relative;
+            left: 10px;
+            top: 0;
+        }
+    }
+
 </style>
