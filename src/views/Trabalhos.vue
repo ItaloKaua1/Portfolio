@@ -81,7 +81,7 @@
         color: white;
         height: 100%;
         margin: 0;
-        padding: 0;
+        padding: 20px 0;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -100,13 +100,14 @@
     }
     section {
         display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-        grid-template-rows: repeat(2, 1fr);
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
         gap: 20px;
         height: 75vh;
         width: 90vw;
         justify-items: center;
         align-items: center;
+        margin-top: -10vh;
     }
 
     .container-trabalho {
@@ -118,12 +119,12 @@
         color: #F13257;
         position: relative; 
         width: 100%;
-        height: auto;
+        height: 35vh;
         padding: 2%;
         transition: transform 0.3s ease, box-shadow 0.3s ease;
         overflow: hidden;
         border-radius: 10px;
-        text-align: center; 
+        text-align: center;
     }
 
     .container-trabalho:hover {
