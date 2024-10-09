@@ -156,6 +156,12 @@
         }
     }
 
+    @media (max-width: 375px) {
+        section{
+            margin-top: 130%;
+        }
+    }
+
     /* reponsividade telas menores */
     @media (max-width: 360px){
         section{

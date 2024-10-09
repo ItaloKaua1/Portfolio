@@ -191,6 +191,26 @@ export default {
         }
     }
 
+    @media (max-width: 375px) {
+        .navbar-container{
+            display: flex;
+            justify-content: baseline;
+            padding: 0 10px
+        }
+        .navbar-links{
+            display: flex;
+            position: relative;
+            left: 0;
+            margin-left: -30px;
+        }
+        .navbar-toggle{
+            display: flex;
+            position: relative;
+            left: 10px;
+            top: 0;
+        }
+    }
+
     /* Responsividade telas menores */
     @media (max-width: 360px) {
         .navbar{
