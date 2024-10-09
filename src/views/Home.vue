@@ -36,7 +36,7 @@
         color: #F13257;
     }
 
-    @media (max-width: 768px){
+    @media (max-width: 412px) and (max-height: 915px){
         #container-home{
             display: flex;
             justify-content: center;

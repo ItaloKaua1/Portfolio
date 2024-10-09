@@ -151,7 +151,7 @@
             gap: 10px;
             width: 90%;
             height: auto;
-            margin-top: 290px;
+            margin-top: 120%;
             margin-bottom: 10px;
         }
     }

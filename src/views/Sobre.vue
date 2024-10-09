@@ -165,7 +165,7 @@ export default {
         }
 
         #formacao {
-            margin-top: 200px;
+            margin-top: 90%;
             margin-bottom: 20px;
         }
 
@@ -186,5 +186,9 @@ export default {
             transition: max-height 0.3s ease-in-out;
             overflow: hidden;
         }
+    }
+
+    @media (max-width: 360px){
+        
     }
 </style>

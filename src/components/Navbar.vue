@@ -147,11 +147,12 @@ export default {
         color: #f13257;
     }
 
-    @media (max-width: 768px) {
+    /* Mudanças Moblie responsivo */
+    @media (max-width: 480px) {
         .navbar{
             width: 100%;
             display: flex;
-            position: relative;
+            position: fixed;
         }
 
         .navbar-container{
@@ -188,4 +189,13 @@ export default {
             top: 16px;
         }
     }
+
+    /* Responsividade telas menores */
+    @media (max-width: 360px) {
+        .navbar-container{
+            position: relative;
+            
+        }
+    }
+
 </style>
