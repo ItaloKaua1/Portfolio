@@ -177,4 +177,10 @@
             margin-top: 125vh;
         }
     }
+
+    @media (min-width: 300px) and (max-width: 319px){
+        section{
+            margin-top: 210vh;
+        }
+    }
 </style>

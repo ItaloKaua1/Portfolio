@@ -224,5 +224,26 @@ export default {
         .section{
             margin-left: -6px;
         }
+
+        @media (min-width: 300px) and (max-width: 319px){
+            #grid {
+                grid-template-columns: 1fr;
+                grid-template-rows: auto;
+                gap: 10px;
+                width: 85%;
+                height: auto;
+                margin: 0;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+            #formacao{
+                margin-top: 190vh;
+            }
+            .section{
+                margin-left: -6px;
+            }
+        }
     }
 </style>
