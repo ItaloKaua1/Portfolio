@@ -195,4 +195,25 @@ export default {
             margin-bottom: 20px;
         }
     }
+
+    @media (max-width: 320px){
+        #grid {
+            grid-template-columns: 1fr;
+            grid-template-rows: auto;
+            gap: 10px;
+            width: 85%;
+            height: auto;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        #formacao{
+            margin-top: 260%;
+        }
+        .section{
+            margin-left: -6px;
+        }
+    }
 </style>

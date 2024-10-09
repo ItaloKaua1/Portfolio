@@ -163,4 +163,10 @@
             padding-bottom: 10px;
         }
     }
+
+    @media (max-width: 320px){
+        section{
+            margin-top: 235%;
+        }
+    }
 </style>

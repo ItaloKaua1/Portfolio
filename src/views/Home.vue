@@ -57,4 +57,10 @@
             text-align: center;
         }
     }
+
+    @media (max-width: 320px){
+        #titulo-home{
+            font-size: x-large;
+        }
+    }
 </style>

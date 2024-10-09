@@ -153,6 +153,7 @@ export default {
             width: 100%;
             display: flex;
             position: fixed;
+            border-bottom: #f13257 solid 2px;
         }
 
         .navbar-container{
@@ -192,12 +193,42 @@ export default {
 
     /* Responsividade telas menores */
     @media (max-width: 360px) {
+        .navbar{
+            border-bottom: #f13257 solid 2px;
+        }
         .navbar-container{
             position: relative;
             display: flex;
         }
         .navbar-links{
             font-size: 20px;
+        }
+        .navbar-toggle{
+            display: relative;
+            position: absolute;
+        }
+        .icon{
+            transition: none;
+        }
+    }
+
+    @media (max-width: 320px) {
+        .navbar-container{
+            display: flex;
+            justify-content: baseline;
+            padding: 0 10px
+        }
+        .navbar-links{
+            display: flex;
+            position: relative;
+            left: 0;
+            margin-left: -30px;
+        }
+        .navbar-toggle{
+            display: flex;
+            position: relative;
+            left: 10px;
+            top: 0;
         }
     }
 
