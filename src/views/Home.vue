@@ -34,6 +34,7 @@
     }
     #titulo-home{
         color: #F13257;
+        text-align: center;
     }
 
     @media (max-width: 412px) and (max-height: 915px){

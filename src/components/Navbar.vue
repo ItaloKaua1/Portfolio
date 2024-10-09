@@ -194,7 +194,10 @@ export default {
     @media (max-width: 360px) {
         .navbar-container{
             position: relative;
-            
+            display: flex;
+        }
+        .navbar-links{
+            font-size: 20px;
         }
     }
 

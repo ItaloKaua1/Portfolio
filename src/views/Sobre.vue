@@ -188,7 +188,11 @@ export default {
         }
     }
 
+    /* reponsividade telas menores */
     @media (max-width: 360px){
-        
+        #formacao {
+            margin-top: 175%;
+            margin-bottom: 20px;
+        }
     }
 </style>

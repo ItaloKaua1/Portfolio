@@ -152,7 +152,15 @@
             width: 90%;
             height: auto;
             margin-top: 120%;
-            margin-bottom: 10px;
+            padding-bottom: 10px;
+        }
+    }
+
+    /* reponsividade telas menores */
+    @media (max-width: 360px){
+        section{
+            margin-top: 180%;
+            padding-bottom: 10px;
         }
     }
 </style>
