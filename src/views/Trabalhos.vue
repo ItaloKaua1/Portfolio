@@ -100,7 +100,7 @@
     }
     section {
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
         grid-template-rows: repeat(2, 1fr);
         gap: 20px;
         height: 75vh;
@@ -118,7 +118,8 @@
         color: #F13257;
         position: relative; 
         width: 100%;
-        height: 100%;
+        height: auto;
+        padding: 2%;
         transition: transform 0.3s ease, box-shadow 0.3s ease;
         overflow: hidden;
         border-radius: 10px;
@@ -136,6 +137,7 @@
         right: 10px;
         width: 40px;
         height: auto;
+        max-width: 100%;
     }
     
     @media (max-width: 768px){
@@ -151,28 +153,28 @@
             gap: 10px;
             width: 90%;
             height: auto;
-            margin-top: 120%;
+            margin-top: 65vh;
             padding-bottom: 10px;
         }
     }
 
     @media (max-width: 375px) {
         section{
-            margin-top: 130%;
+            margin-top: 190vh;
         }
     }
 
     /* reponsividade telas menores */
     @media (max-width: 360px){
         section{
-            margin-top: 180%;
+            margin-top: 100vh;
             padding-bottom: 10px;
         }
     }
 
     @media (max-width: 320px){
         section{
-            margin-top: 235%;
+            margin-top: 125vh;
         }
     }
 </style>

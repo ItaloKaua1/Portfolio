@@ -223,10 +223,6 @@ export default {
         .navbar-links{
             font-size: 20px;
         }
-        .navbar-toggle{
-            display: relative;
-            position: absolute;
-        }
         .icon{
             transition: none;
         }

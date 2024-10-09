@@ -190,15 +190,18 @@ export default {
 
     @media (max-width: 375px) {
         #formacao{
-            margin-top: 115%;
+            margin-top: 150vh;
         }
     }
 
     /* reponsividade telas menores */
     @media (max-width: 360px){
         #formacao {
-            margin-top: 175%;
+            margin-top: 78vh;
             margin-bottom: 20px;
+        }
+        .section{
+            margin-left: -2.5px;
         }
     }
 
@@ -216,7 +219,7 @@ export default {
             align-items: center;
         }
         #formacao{
-            margin-top: 260%;
+            margin-top: 110vh;
         }
         .section{
             margin-left: -6px;
