@@ -105,6 +105,8 @@ export default {
         gap: 20px;
         width: 80%;
         height: 70%;
+        justify-content: center;
+        align-items: center;
     }
 
     .section {
@@ -116,6 +118,7 @@ export default {
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        margin: 0 auto;
     }
 
     ul {
@@ -148,6 +151,8 @@ export default {
             display: flex;
             position: relative;
             text-align: center;
+            height: auto;
+            justify-content: center;
         }
 
         #grid {
@@ -165,7 +170,7 @@ export default {
         }
 
         #formacao {
-            margin-top: 90%;
+            margin-top: 15vh;
             margin-bottom: 20px;
         }
 
@@ -185,65 +190,6 @@ export default {
         .section div {
             transition: max-height 0.3s ease-in-out;
             overflow: hidden;
-        }
-    }
-
-    @media (max-width: 375px) {
-        #formacao{
-            margin-top: 150vh;
-        }
-    }
-
-    /* reponsividade telas menores */
-    @media (max-width: 360px){
-        #formacao {
-            margin-top: 78vh;
-            margin-bottom: 20px;
-        }
-        .section{
-            margin-left: -2.5px;
-        }
-    }
-
-    @media (max-width: 320px){
-        #grid {
-            grid-template-columns: 1fr;
-            grid-template-rows: auto;
-            gap: 10px;
-            width: 85%;
-            height: auto;
-            margin: 0;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-        #formacao{
-            margin-top: 110vh;
-        }
-        .section{
-            margin-left: -6px;
-        }
-
-        @media (min-width: 300px) and (max-width: 319px){
-            #grid {
-                grid-template-columns: 1fr;
-                grid-template-rows: auto;
-                gap: 10px;
-                width: 85%;
-                height: auto;
-                margin: 0;
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-            }
-            #formacao{
-                margin-top: 190vh;
-            }
-            .section{
-                margin-left: -6px;
-            }
         }
     }
 </style>

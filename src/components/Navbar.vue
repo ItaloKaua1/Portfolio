@@ -148,10 +148,12 @@ export default {
     }
 
     /* Mudanças Moblie responsivo */
-    @media (max-width: 480px) {
+    @media (max-width: 768px) {
         .navbar{
             width: 100%;
-            display: flex;
+            justify-content: baseline;
+            padding: 16px;
+            font-size: larger;
             position: fixed;
             border-bottom: #f13257 solid 2px;
         }
@@ -173,6 +175,7 @@ export default {
             width: 75%;
             padding: 16px;
             z-index: 1002;
+            margin-left: -25px;
         }
 
         .navbar-links.active {
@@ -184,63 +187,6 @@ export default {
         }
 
         .navbar-toggle {
-            display: block;
-            position: absolute;
-            right: 16px;
-            top: 16px;
-        }
-    }
-
-    @media (max-width: 375px) {
-        .navbar-container{
-            display: flex;
-            justify-content: baseline;
-            padding: 0 10px
-        }
-        .navbar-links{
-            display: flex;
-            position: relative;
-            left: 0;
-            margin-left: -30px;
-        }
-        .navbar-toggle{
-            display: flex;
-            position: relative;
-            left: 10px;
-            top: 0;
-        }
-    }
-
-    /* Responsividade telas menores */
-    @media (max-width: 360px) {
-        .navbar{
-            border-bottom: #f13257 solid 2px;
-        }
-        .navbar-container{
-            position: relative;
-            display: flex;
-        }
-        .navbar-links{
-            font-size: 20px;
-        }
-        .icon{
-            transition: none;
-        }
-    }
-
-    @media (max-width: 320px) {
-        .navbar-container{
-            display: flex;
-            justify-content: baseline;
-            padding: 0 10px
-        }
-        .navbar-links{
-            display: flex;
-            position: relative;
-            left: 0;
-            margin-left: -30px;
-        }
-        .navbar-toggle{
             display: flex;
             position: relative;
             left: 10px;

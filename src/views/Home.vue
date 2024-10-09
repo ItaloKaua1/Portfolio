@@ -1,9 +1,3 @@
-<script>
-    export default {
-        name: 'Home',
-    };
-</script>
-
 <template>
     <div id="container-home">
         <img src="/ik.gif" alt="italo kaua">
@@ -11,11 +5,17 @@
     </div>
 </template>
 
+<script>
+    export default {
+        name: 'Home',
+    };
+</script>
+
 <style scoped>
     #container-home {
         background-color: black;
         color: white;
-        height: 100%;
+        height: 100vh;
         margin: 0;
         padding: 0;
         display: flex;
@@ -24,43 +24,26 @@
         flex-direction: column;
         position: relative;
         width: 100%;
-        left: 0;
-        top: 0;
         font-family: 'Courier New', Courier, monospace;
-        flex: 1;
     }
-    img{
+
+    img {
         width: 15%;
+        height: auto;
     }
-    #titulo-home{
+
+    #titulo-home {
         color: #F13257;
         text-align: center;
     }
 
-    @media (max-width: 412px) and (max-height: 915px){
-        #container-home{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            position: relative;
-            height: 100%;
+    @media (max-width: 768px) {
+        img {
+            width: 40%;
         }
-        img{
-            width: 45%;
-        }
-        #titulo-home{
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            position: relative;
-            padding: 20px;
-            text-align: center;
-        }
-    }
 
-    @media (max-width: 320px){
-        #titulo-home{
-            font-size: x-large;
+        #titulo-home {
+            padding: 20px;
         }
     }
 </style>

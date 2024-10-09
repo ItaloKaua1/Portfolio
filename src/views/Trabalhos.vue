@@ -145,6 +145,7 @@
             display: flex;
             position: relative;
             text-align: center;
+            height: auto;
         }
 
         section{
@@ -153,34 +154,8 @@
             gap: 10px;
             width: 90%;
             height: auto;
-            margin-top: 65vh;
+            margin-top: 15vh;
             padding-bottom: 10px;
-        }
-    }
-
-    @media (max-width: 375px) {
-        section{
-            margin-top: 190vh;
-        }
-    }
-
-    /* reponsividade telas menores */
-    @media (max-width: 360px){
-        section{
-            margin-top: 100vh;
-            padding-bottom: 10px;
-        }
-    }
-
-    @media (max-width: 320px){
-        section{
-            margin-top: 125vh;
-        }
-    }
-
-    @media (min-width: 300px) and (max-width: 319px){
-        section{
-            margin-top: 210vh;
         }
     }
 </style>
