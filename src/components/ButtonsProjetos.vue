@@ -53,6 +53,7 @@
     @media (max-width: 768px){
         .button-projeto{
             margin-bottom: 10px;
+            height: 50px;
         }
     }
 </style>

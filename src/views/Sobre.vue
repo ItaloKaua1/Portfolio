@@ -118,7 +118,6 @@ export default {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        margin: 0 auto;
     }
 
     ul {
@@ -167,6 +166,7 @@ export default {
             width: 90%;
             margin: 0 auto 10px auto;
             padding: 20px;
+            margin: 0 auto;
         }
 
         #formacao {

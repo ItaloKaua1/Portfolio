@@ -9,7 +9,8 @@
                     :class="{ 'active': isActive('/trabalhos') }">Trabalhos</router-link>
             </div>
 
-            <div class="navbar-toggle" @click="toggleMenu" :class="{ 'active': isMenuOpen }">
+            <!-- Adicionamos o stopPropagation aqui -->
+            <div class="navbar-toggle" @click.stop="toggleMenu" :class="{ 'active': isMenuOpen }">
                 <svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24"
                     xmlns="http://www.w3.org/2000/svg">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7">
@@ -18,7 +19,7 @@
             </div>
         </div>
 
-        <div class="dropdown-menu" v-if="isMenuOpen">
+        <div class="dropdown-menu" v-if="isMenuOpen" ref="dropdown">
             <a href="https://www.linkedin.com/in/italokaua1/" target="_blank">
                 <img src="/LinkedIn-logo.png" alt="linkedin logo" id="logo-contato" />
             </a>
@@ -46,6 +47,18 @@ export default {
         isActive(page) {
             return this.$route.path === page;
         },
+        handleOutsideClick(event) {
+            const dropdown = this.$refs.dropdown;
+            if (dropdown && !dropdown.contains(event.target)) {
+                this.isMenuOpen = false;
+            }
+        }
+    },
+    mounted() {
+        document.addEventListener('click', this.handleOutsideClick);
+    },
+    beforeDestroy() {
+        document.removeEventListener('click', this.handleOutsideClick);
     },
 };
 </script>
@@ -191,6 +204,17 @@ export default {
             position: relative;
             left: 10px;
             top: 0;
+        }
+        .dropdown-menu{
+            position: absolute;
+            margin-left: 2px; 
+            right: 0px;
+        }
+        .navbar-toggle.active .icon {
+            color: #f13257;
+        }
+        .navbar-toggle .icon {
+            color: white;
         }
     }
 
